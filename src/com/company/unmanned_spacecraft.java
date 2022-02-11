@@ -10,7 +10,7 @@ public class unmanned_spacecraft extends spacecraft implements Ifuel{
      * Cnstructor de la clase nave espacial no tripulada
      * @param model Modelo de la nave
      * @param fuel Tipo de gasolina de la nave
-     * @param crew Tirpulacion variable tipo booleano: false si no hay true si hay tripulacion
+     * @param crew Tirpulacion variable tipo booleano: false si no hay, true si hay tripulacion
      * @param planets Nombre de los planetas que viaja la nave
      */
     public unmanned_spacecraft(String model, String fuel, boolean crew, String planets) {

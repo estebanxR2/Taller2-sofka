@@ -32,7 +32,7 @@ public class Main {
                        b.UNMANNED SPACECRAFT
                        c.MANNED SPACECRAFTS
                        (a,b,c) R/:""");
-               /* input: lectura de seleccion del usuario y es esta variable es de tipo char */
+
 
                char option1 = input.next().charAt(0);
                /* switch case: forma sencilla de enviar la ejecución a diferentes partes del código segun la seleccion del usuario*/

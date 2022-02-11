@@ -3,12 +3,16 @@ package com.company;
 public class manned_spacecraft extends spacecraft implements Ifuel {
     protected boolean crew ;
 
+    /**
+     * @param model Modelo de la nave
+     * @param fuel Tipo de gasolina de la nave
+     * @param crew Tirpulacion variable tipo booleano: false si no hay true si hay tripulacion
+     */
     public manned_spacecraft(String model, String fuel, boolean crew) {
         super(model, fuel);
         this.crew=crew;
     }
     /**
-     *
      * @return retorna el valor ingreasado para saber si hay o no tripulacion
      */
     public boolean isCrew(){
