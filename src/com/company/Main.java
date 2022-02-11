@@ -14,7 +14,6 @@ public class Main {
     public static void main(String[] args) {
         /* se crea una variable x entero para utilizar en el while si x es menor que 4 se cumplira otro ciclo hasta que este sea mayor que la condicion */
        int x = 1;
-       int prueba =29;
         while (x<=4) {
             /**
              + se impprime las opciones para le seleccion del usuario
