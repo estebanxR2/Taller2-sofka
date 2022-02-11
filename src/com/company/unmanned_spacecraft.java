@@ -44,7 +44,7 @@ public class unmanned_spacecraft extends spacecraft implements Ifuel{
     }
     @Override
     public String show(){
-        return "model: "+model+ "\nfuel: "+fuel+"\ncrew "+crew+"\nplanets:"+ planets;
+        return "model: "+model+ "\nfuel: "+fuel+"\ncrew: "+crew+"\nplanets:"+ planets;
 
     }
 

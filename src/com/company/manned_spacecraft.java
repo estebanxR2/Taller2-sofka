@@ -28,7 +28,7 @@ public class manned_spacecraft extends spacecraft implements Ifuel {
     /*imprime los valores creados por el usuario*/
     @Override
     public String show(){
-        return "model: "+model+ "\nfuel: "+fuel+"\ncrew "+crew;
+        return "model: "+model+ "\nfuel: "+fuel+"\ncrew: "+crew;
 
     }
 }
