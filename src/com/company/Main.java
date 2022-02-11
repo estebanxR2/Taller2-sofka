@@ -14,12 +14,14 @@ public class Main {
     public static void main(String[] args) {
         /* se crea una variable x entero para utilizar en el while si x es menor que 4 se cumplira otro ciclo hasta que este sea mayor que la condicion */
        int x = 1;
+       Scanner input= new Scanner(System.in);
         while (x<=4) {
             /**
              + se impprime las opciones para le seleccion del usuario
              */
             System.out.print("""
-                \nSelect a spacecraft:\s
+                \n/////You can create only 4 spacecraft/////
+                Select a spacecraft:\s
                 a.SHUTTLE VEHICLES
                 b.UNMANNED SPACECRAFT
                 c.MANNED SPACECRAFTS
@@ -27,7 +29,7 @@ public class Main {
             /**
              * input: lectura de seleccion del usuario y es esta variable es de tipo char
              */
-            Scanner input= new Scanner(System.in);
+
             char option1=input.nextLine().charAt(0);
             /* switch case: forma sencilla de enviar la ejecución a diferentes partes del código segun la seleccion del usuario*/
             switch (option1) {
@@ -69,14 +71,21 @@ public class Main {
             }
             /* Pregunta al usuario para continuar o no en la creacion de spacecraft*/
             System.out.print("\ndo you want to continue creating ships or leave? (y/n): \s");
-            char option2 = input.next().charAt(0);
+            char option2 = input.nextLine().charAt(0);
             //input.close();
             switch (option2) {
                 case 'y' -> x ++;
                 case 'n' -> x = 5;
                 default -> System.out.print("You have entered the wrong option\n");
             }
-
         }
+        char option3 = input.next().charAt(0);
+        System.out.print("quieres crear otras 4 naves espaciales?(y/n):\n");
+        switch (option3) {
+            case 'y' -> x = 1;
+            case 'n' -> x = 5;
+            default -> System.out.print("You have entered the wrong option\n");
+        }
+
     }
 }
