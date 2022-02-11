@@ -1,7 +1,7 @@
 package com.company;
 /**
  * Creacion de naves espaciales atraves de POO
- * @autor Jair Rincon  -  jairesrival@gmail.com
+ * @autor Jair Rincon  -  jairesrival2@gmail.com
  */
 
 import java.util.Scanner;
@@ -32,8 +32,6 @@ public class Main {
                        b.UNMANNED SPACECRAFT
                        c.MANNED SPACECRAFTS
                        (a,b,c) R/:""");
-
-
                char option1 = input.next().charAt(0);
                /* switch case: forma sencilla de enviar la ejecución a diferentes partes del código segun la seleccion del usuario*/
                switch (option1) {
